@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="bg-button">
+      <p style="color: #bfbfbf">Qual seu sexo?</p>
+      <center>
+        <div>
+          <button value="man" class="iconify man" data-icon="mdi:face-man" data-inline="false" width="50"></button>
+          <button value="woman" class="iconify woman" data-icon="mdi:face-woman" data-inline="false" width="50"></button>
+          <div>
+      </center><br>
+      <input required id="idade" placeholder="Qual sua idade?" type="text" class="btn1" value=""></input><br>
+      <input required id="peso" placeholder="Qual seu peso?" type="text" class="btn1" value=""></input><br>
+      <input required id="altura" placeholder="Qual sua altura?" type="text" class="btn1" value=""></input><br>
+      <div>
+        <!--<p class="text-align" style="color: #bfbfbf">Qual seu nível de atividade diária?</p>
+        <div>
+          <input type="button" class="btn3" value="leve"></input>
+          <input type="button" class="btn3" value="moderado"></input>
+          <input type="button" class="btn3" value="intenso"></input>
+        </div>
+        <div>
+          <br>-->
+        <center>
+          <button type="submit" onclick="imc()" class="btn2">calcular</button>
+          <br><br>
+          <input class="resultado1" type="text" id="resultado" value="">
+        </center>
+      </div>
+    </div>
+  </div>
+  </div>
+  <BR><BR>
+  <script type="text/javascript" src="script.js"></script>
+</body>
