@@ -14,19 +14,28 @@
 </head>
 
 <body>
+  <header class="bg-header">
+    <div class="container-header">
+      <p class="header-text"><a href="https://diegomdias.github.io/portfolio">Diego Dias</a>&emsp;©&emsp;</p>
+      <p class="header-text">Este projeto faz parte de meus estudos de JavaScript. :)</p>
+    </div>
+  </header>
   <div class="container">
     <div class="bg-button">
       <p style="color: #bfbfbf">Qual seu sexo?</p>
       <center>
         <div>
-          <button value="man" class="iconify man" data-icon="mdi:face-man" data-inline="false" width="50"></button>
-          <button value="woman" class="iconify woman" data-icon="mdi:face-woman" data-inline="false" width="50"></button>
+          <button style="cursor: pointer;" onclick="man()" value="man" class="iconify borderm" data-icon="mdi:face-man" data-inline="false" width="50">
+          </button>
+
+          <button style="cursor: pointer;" value="woman" class="iconify borderf" onclick="woman()" data-icon="mdi:face-woman" data-inline="false" width="50"></button>
           <div>
       </center><br>
-      <input required id="idade" placeholder="Qual sua idade?" type="text" class="btn1" value=""></input><br>
-      <input required id="peso" placeholder="Qual seu peso? Ex: 80.5" type="text" class="btn1" value=""></input><br>
-      <input required id="altura" placeholder="Qual sua altura? Ex: 1.78" type="text" class="btn1" value=""></input><br>
+      <input required id="idade" placeholder="Qual sua idade?" type="text" class="btn1" value=""><br>
+      <input required id="peso" placeholder="Qual seu peso? Ex: 80.5" type="text" class="btn1" value=""><br>
+      <input required id="altura" placeholder="Qual sua altura? Ex: 1.78" type="text" class="btn1" value=""><br>
       <div>
+
         <!--<p class="text-align" style="color: #bfbfbf">Qual seu nível de atividade diária?</p>
         <div>
           <input type="button" class="btn3" value="leve"></input>
@@ -36,17 +45,25 @@
         <div>
           <br>-->
         <center>
-          <button type="submit" onclick="imc(), remove()" class="btn2">calcular</button>
+
+          <button type="submit" onclick="imc()"" class=" btn2">calcular</button>
           <br>
-          <div>
-          <br><p class="dnone" id="removetext">Seu imc é</p>
-          <input class="resultado1" type="text" id="resultado" value="">
-        </center>
-        <br>
+          <br>
+          <div class="dnone" id="showme">
+            <br>
+            <p class="dnone" id="removetext">Seu imc é: </p>
+            <input class="resultado1" type="text" id="resultado" value="">
+          </div>
+
+          <p class="dnone" id="showme2">Seu IMC é de <input class="myinputp" value="" id="resultado2"><span class="alterar"><span></p>
+
+          <p class="dnone" id="showme3"><input class="myinputp" value="" id="resultado2"><span class="alterar2"><span></p>
+
+
       </div>
+
     </div>
   </div>
   </div>
-
   <script type="text/javascript" src="script.js"></script>
 </body>

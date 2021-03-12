@@ -1,6 +1,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f18a18;
+  margin: 0;
+  padding: 0;
 }
 textarea:focus,
 input:focus,
@@ -15,24 +17,27 @@ button:focus {
   width: 55px;
   height: 55px;
   cursor: pointer;
-  border-radius: 50%;
  /* border: 1px solid #02abfd;*/
-  border-radius: 50%;
   overflow: hidden;
 }
 
-
-
-.woman {
-  width: 55px;
-  height: 55px;
-  cursor: pointer;
-  border-radius: 50%;
- /* border: 1px solid #fb6ac8;*/
-  border-radius: 50%;
-  overflow: hidden;
+.borderm{ 
+filter: opacity(40%);
 }
 
+.borderm2{ 
+  filter: opacity(100%);
+  }
+
+
+.borderm2{ 
+  filter: opacity(100%);
+  }
+  
+
+.borderf{
+filter: opacity(40%);
+}
 
 
 ::-webkit-input-placeholder {
@@ -70,7 +75,6 @@ button:focus {
   justify-content: center;
   align-items: center;
   width: 500px;
- 
   border: 1px solid #f2f2f2;
 }
 
@@ -126,12 +130,13 @@ button:focus {
   transition: 0.1s;
 }
 .resultado1{
+  width: 80px;
+  background-color: #e1e1e1;
   padding: 0;
-  margin-top: -25px;
   border: none;
   color: #f18a18;
-  font-size: 1.3em;
-  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
 }
@@ -140,6 +145,53 @@ button:focus {
   display: flex;
 }
 
+.alterar2{
+  margin-left: -27px;
+}
+
 .text-align {
   text-align: center;
+}
+
+/*TABELAIMC*/
+.tabelaImc{
+  position: relative;
+  display: flex;
+  justify-content: center;
+height: 50px;
+margin-top: 30px;
+  background-color: #e1e1e1;
+  width: 300px;
+}
+
+.myinputp{
+  text-align: center;
+  border: none;
+  width: 40px;
+  color: #f18a18;
+  font-style: bold;
+}
+
+.bg-header{
+
+ width: 100%;
+
+ background-color: #3f3f3f;
+}
+
+.container-header{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+a, a.active{
+  text-decoration: none;
+  color: white;
+}
+
+.header-text{
+  color: white;
+  font-size: 0.9em;
 }
