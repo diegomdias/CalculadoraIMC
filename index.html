@@ -24,8 +24,8 @@
           <div>
       </center><br>
       <input required id="idade" placeholder="Qual sua idade?" type="text" class="btn1" value=""></input><br>
-      <input required id="peso" placeholder="Qual seu peso?" type="text" class="btn1" value=""></input><br>
-      <input required id="altura" placeholder="Qual sua altura?" type="text" class="btn1" value=""></input><br>
+      <input required id="peso" placeholder="Qual seu peso? Ex: 80.5" type="text" class="btn1" value=""></input><br>
+      <input required id="altura" placeholder="Qual sua altura? Ex: 1.78" type="text" class="btn1" value=""></input><br>
       <div>
         <!--<p class="text-align" style="color: #bfbfbf">Qual seu nível de atividade diária?</p>
         <div>
@@ -36,14 +36,17 @@
         <div>
           <br>-->
         <center>
-          <button type="submit" onclick="imc()" class="btn2">calcular</button>
-          <br><br>
+          <button type="submit" onclick="imc(), remove()" class="btn2">calcular</button>
+          <br>
+          <div>
+          <br><p class="dnone" id="removetext">Seu imc é</p>
           <input class="resultado1" type="text" id="resultado" value="">
         </center>
+        <br>
       </div>
     </div>
   </div>
   </div>
-  <BR><BR>
+
   <script type="text/javascript" src="script.js"></script>
 </body>
