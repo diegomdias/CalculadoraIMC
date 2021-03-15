@@ -1,41 +1,44 @@
 function imc(){
-  let idade = document.querySelector('#idade').value;
+  var idade = document.querySelector('#idade');
+var valorIdade = idade.value;
 
-let peso = document.querySelector("#peso");
-let valorPeso = peso.value;
+var peso = document.querySelector("#peso");
+var valorPeso = peso.value;
 
-let altura = document.querySelector('#altura');
-let valorAltura = altura.value;
+var altura = document.querySelector('#altura');
+var valorAltura = altura.value;
 
-let calc = valorPeso/(valorAltura*valorAltura);
+var calc = valorPeso/(valorAltura*valorAltura);
 
-let arredondado = parseFloat(calc.toFixed(2));
+var arredondado = parseFloat(calc.toFixed(2));
 
 document.querySelector('#resultado').setAttribute("value", arredondado);
 document.querySelector('#resultado2').setAttribute("value", arredondado);
 
-let textAppear = document.querySelector('#removetext');
+const textAppear = document.querySelector('#removetext');
 textAppear.classList.remove('dnone');
 
 //IRÁ APARECER O RESULTADO APÓS FUNÇÃO CALCULAR
-let divAppear = document.querySelector('#showme');
+const divAppear = document.querySelector('#showme');
 divAppear.classList.replace('dnone', 'tabelaImc');
 
-const divAppear2 = document.querySelector('#showme2');
+
 
 if(arredondado < 18.5){
+  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
+  const alterarTexto = document.querySelector('.alterar');
 alterarTexto.textContent = ', você está abaixo do peso.';
 }
 else if(arredondado >= 18.5 && arredondado < 25 ){
-
+  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
   const alterarTexto = document.querySelector('.alterar');
   alterarTexto.textContent = ', você está no seu peso normal.';
 
 }
 else if(arredondado >= 25 && arredondado < 30 ){
-
+  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
   const alterarTexto = document.querySelector('.alterar');
   alterarTexto.textContent = ', você está com um pouco de sobre-peso.';
@@ -43,6 +46,7 @@ divAppear2.classList.remove('dnone');
 }
 
 else if(arredondado >= 30 && arredondado < 35 ){
+  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
   const alterarTexto = document.querySelector('.alterar');
   alterarTexto.textContent = ', Obesidade grau 1.';
@@ -74,13 +78,14 @@ else{
   
 
 }
+
+
 }
 
 document.addEventListener('', imc);
 
 ////////////////////////////////////////////////////////////////////
 
-//Mudei aqui - Gabriel
 function man(){
   let man = document.querySelector('#man')
   let woman = document.querySelector('#woman')
