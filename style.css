@@ -20,23 +20,12 @@ button:focus {
  /* border: 1px solid #02abfd;*/
   overflow: hidden;
 }
-
-.borderm{ 
-filter: opacity(40%);
+/*Mudei aqui - Gabriel */
+.iconify{
+  filter: opacity(40%);
 }
-
-.borderm2{ 
+.iconify.border{
   filter: opacity(100%);
-  }
-
-
-.borderm2{ 
-  filter: opacity(100%);
-  }
-  
-
-.borderf{
-filter: opacity(40%);
 }
 
 
