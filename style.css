@@ -13,6 +13,10 @@ button:focus {
 .dnone{
   display: none;
 }
+
+.dnone2{
+  display: none;
+}
 .man {
   width: 55px;
   height: 55px;
@@ -130,6 +134,10 @@ button:focus {
   text-align: center;
 }
 
+.put2{
+  background-color:#fff;
+}
+
 .form {
   display: flex;
 }
@@ -183,4 +191,15 @@ a, a.active{
 .header-text{
   color: white;
   font-size: 0.9em;
+}
+
+.verTabela{
+  font-size: 0.8em;
+  color: #0f7af0 ;
+  cursor: pointer;
+}
+
+.verTabela span{
+  color: red;
+  
 }
