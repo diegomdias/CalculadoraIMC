@@ -1,17 +1,18 @@
 function imc(){
-  var idade = document.querySelector('#idade');
-var valorIdade = idade.value;
+let idade = document.querySelector('#idade');
+let valorIdade = idade.value;
 
-var peso = document.querySelector("#peso");
-var valorPeso = peso.value;
+let peso = document.querySelector("#peso");
+let valorPeso = peso.value;
 
-var altura = document.querySelector('#altura');
-var valorAltura = altura.value;
+let altura = document.querySelector('#altura');
+let valorAltura = altura.value;
 
-var calc = valorPeso/(valorAltura*valorAltura);
+let calc = valorPeso/(valorAltura*valorAltura);
 
-var arredondado = parseFloat(calc.toFixed(2));
+let arredondado = parseFloat(calc.toFixed(2));
 
+//PEGANDO OS VALORES
 document.querySelector('#resultado').setAttribute("value", arredondado);
 document.querySelector('#resultado2').setAttribute("value", arredondado);
 
@@ -22,64 +23,57 @@ textAppear.classList.remove('dnone');
 const divAppear = document.querySelector('#showme');
 divAppear.classList.replace('dnone', 'tabelaImc');
 
+//QuerySelector
+const divAppear2 = document.querySelector('#showme2');
+const alterarTexto = document.querySelector('.alterar');
+const verTabela = document.querySelector('#verTabela')
+const alterarTexto2 = document.querySelector('.alterar2');
+const divAppear3 = document.querySelector('#showme3');
 
-
+//IF ELSE
 if(arredondado < 18.5){
-  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
-  const alterarTexto = document.querySelector('.alterar');
-alterarTexto.textContent = ', você está abaixo do peso.';
+verTabela.classList.remove('dnone');
+alterarTexto.textContent = ', você está abaixo do peso recomendado.';
+
 }
 else if(arredondado >= 18.5 && arredondado < 25 ){
-  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
-  const alterarTexto = document.querySelector('.alterar');
-  alterarTexto.textContent = ', você está no seu peso normal.';
+verTabela.classList.remove('dnone');
+alterarTexto.textContent = ', você está no seu peso normal.';
 
 }
 else if(arredondado >= 25 && arredondado < 30 ){
-  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
-  const alterarTexto = document.querySelector('.alterar');
-  alterarTexto.textContent = ', você está com um pouco de sobre-peso.';
-
+verTabela.classList.remove('dnone');
+alterarTexto.textContent = ', você está com um pouco acima do peso ideal.';
 }
 
 else if(arredondado >= 30 && arredondado < 35 ){
-  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
-  const alterarTexto = document.querySelector('.alterar');
-  alterarTexto.textContent = ', Obesidade grau 1.';
-
+verTabela.classList.remove('dnone');
+alterarTexto.textContent = ', Obesidade grau 1.';
 }
 
 else if(arredondado >= 35 && arredondado < 40 ){
-  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
-  const alterarTexto = document.querySelector('.alterar');
-  alterarTexto.textContent = ', Obesidade grau 2.';
-
+verTabela.classList.remove('dnone');
+alterarTexto.textContent = ', Obesidade grau 2.';
 }
 
 else if(arredondado > 40 ){
-  const divAppear2 = document.querySelector('#showme2');
 divAppear2.classList.remove('dnone');
-  const alterarTexto = document.querySelector('.alterar');
-  alterarTexto.textContent = ', Obesidade grau 3.';
-
+verTabela.classList.remove('dnone');
+alterarTexto.textContent = ', Obesidade grau 3.';
 }
 
 else{
-  const divAppear3 = document.querySelector('#showme3');
+  textAppear.classList.add('dnone2');
   divAppear3.classList.remove('dnone');
-  const alterarTexto2 = document.querySelector('.alterar2');
   alterarTexto2.textContent = 'Preencha todos os dados corretamente.';
+  divAppear.classList.replace('tabelaImc', 'dnone');
  
-  
-
 }
-
-
 }
 
 document.addEventListener('', imc);
