@@ -1,5 +1,5 @@
 # calculadoraIMC
-Aplicando o que estou aprendendo, esse é o meu primeiro projeto envolvendo JavaScript,  
-Ele calcula o IMC ( Índice de Massa Corpórea ).
+Meu primeiro projeto em Javascript, onde eu aprendi a manipular elementos do DOM, como obter valores digitados pelo usuário e principalmente manipulações de ClassList.
+Layout focado em objetividade, optei por ser clean e funcional, onde em poucos segundos retorna o valor de IMC.
 
 https://diegomdias.github.io/calculadoraIMC/.
