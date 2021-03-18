@@ -15,6 +15,10 @@ form input {
   margin-top: 18px;
 }
 
+img{
+  max-width: 100%;
+}
+
 .dnone {
   display: none;
 }
@@ -33,9 +37,7 @@ form input {
 .iconify {
   filter: opacity(40%);
 }
-.iconify.border {
-  filter: opacity(100%);
-}
+
 
 .border {
   filter: opacity(100%);
@@ -145,9 +147,9 @@ form input {
 }
 
 #showme2 {
-  margin-top: 15px;
+  margin-top: 25px;
   color: black;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 #showme {
@@ -207,12 +209,6 @@ a.active {
   font-size: 0.9em;
 }
 
-.verTabela {
-  font-size: 0.8em;
-  color: #0f7af0;
-  cursor: pointer;
-}
-
-.verTabela span {
-  color: red;
+.myimg{
+  margin-top: 30px;
 }
