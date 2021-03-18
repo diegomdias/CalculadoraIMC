@@ -28,11 +28,12 @@ const verTabela = document.querySelector('#verTabela')
 const alterarTexto2 = document.querySelector('.alterar2');
 const divAppear3 = document.querySelector('#showme3');
 const divAppear4 = document.querySelector('#resultado');
-
+const img = document.querySelector('img');
 //IF ELSE
 
 if(arredondado === 0){
-textAppear.classList.remove('dnone');
+img.classList.add('dnone');
+textAppear.classList.add('dnone');
 divAppear.classList.add('dnone')
 divAppear4.classList.add('dnone');
 textAppear.classList.add('dnone');
@@ -47,6 +48,7 @@ textAppear.classList.remove('dnone');
 divAppear2.classList.remove('dnone');
 divAppear4.classList.remove('dnone');
 verTabela.classList.remove('dnone');
+img.classList.remove('dnone')
 alterarTexto2.textContent = "";
 alterarTexto.textContent = 'Você está abaixo do peso recomendado.';
 
@@ -55,15 +57,17 @@ else if(arredondado >= 18.5 && arredondado < 25 ){
 textAppear.classList.remove('dnone');
 divAppear2.classList.remove('dnone');
 verTabela.classList.remove('dnone');
+img.classList.remove('dnone')
 divAppear4.classList.remove('dnone');
 alterarTexto2.textContent = "";
-alterarTexto.textContent = 'Você está no seu peso normal.';
+alterarTexto.textContent = 'Que maravilha! Você está no seu peso ideal. =)';
 
 }
 else if(arredondado >= 25 && arredondado < 30 ){
 textAppear.classList.remove('dnone');
 divAppear2.classList.remove('dnone');
 verTabela.classList.remove('dnone');
+img.classList.remove('dnone')
 divAppear4.classList.remove('dnone');
 alterarTexto2.textContent = "";
 alterarTexto.textContent = 'Você está com um pouco acima do peso ideal.';
@@ -73,6 +77,7 @@ else if(arredondado >= 30 && arredondado < 35 ){
 textAppear.classList.remove('dnone');
 divAppear2.classList.remove('dnone');
 verTabela.classList.remove('dnone');
+img.classList.remove('dnone')
 divAppear4.classList.remove('dnone');
 alterarTexto2.textContent = "";
 alterarTexto.textContent = ', Obesidade grau 1.';
@@ -82,6 +87,7 @@ else if(arredondado >= 35 && arredondado < 40 ){
 textAppear.classList.remove('dnone');
 divAppear2.classList.remove('dnone');
 verTabela.classList.remove('dnone');
+img.classList.remove('dnone')
 divAppear4.classList.remove('dnone');
 alterarTexto2.textContent = "";
 alterarTexto.textContent = 'Obesidade grau 2.';
@@ -91,6 +97,7 @@ else if(arredondado > 40 ){
 textAppear.classList.remove('dnone');
 divAppear2.classList.remove('dnone');
 verTabela.classList.remove('dnone');
+img.classList.remove('dnone')
 divAppear4.classList.remove('dnone');
 alterarTexto2.textContent = "";
 alterarTexto.textContent = 'Obesidade grau 3.';
@@ -98,19 +105,20 @@ alterarTexto.textContent = 'Obesidade grau 3.';
 
 
 else{
+textAppear.classList.add('dnone');
+img.classList.add('dnone');
 divAppear4.classList.add('dnone');
 divAppear3.classList.remove('dnone');
-alterarTexto2.textContent = 'Preencha todos os dados corretamente.';
+verTabela.classList.add('dnone')
+alterarTexto2.textContent = 'Preencha todos os dados corretamente. =)';
 alterarTexto.textContent = "";
 divAppear.classList.replace('tabelaImc', 'dnone');
-
 }
 }
 
 document.addEventListener('submit', imc);
 
 ////////////////////////////////////////////////////////////////////
-
 
 function man(){
   let man = document.querySelector('#man')
@@ -125,3 +133,4 @@ function woman(){
   man.classList.remove('border')
   woman.classList.add('border')
 }
+
